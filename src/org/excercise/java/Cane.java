@@ -1,6 +1,6 @@
 package org.excercise.java;
 
-public class Cane extends Animale{
+public class Cane extends Animale implements Nuotare{
 
     public Cane(String nome) {
         super(nome);
@@ -15,6 +15,11 @@ public class Cane extends Animale{
     public void mangia() {
         System.out.println("Croccantini, Scatolette in umido");
     };
+
+    @Override
+    public void nuota() {
+        System.out.println("sa nuotare!!!");
+    }
 
 
 }
